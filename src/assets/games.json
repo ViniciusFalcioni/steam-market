@@ -1,0 +1,62 @@
+[
+    {
+        "name": "Fifa 23",
+        "price": 119.00,
+        "description": "FIFA 23 traz o Jogo de Todo Mundo aos gramados com a tecnologia HyperMotion2, a FIFA World Cup™ masculina e feminina (lançamento durante a temporada), times femininos, recursos de crossplay* e muito mais.",
+        "foto": "fifa23"
+    },
+    {
+        "name": "Among US",
+        "price": 9.99,
+        "description": "Um jogo de trabalho em equipe e trairagem online ou em rede local para 4 a 15 jogadores... no espaço!",
+        "foto": "among"
+    },
+    {
+        "name": "Tom Clancy's Rainbow Six® Siege",
+        "price": 59.99,
+        "description": "Tom Clancy's Rainbow Six® Siege é um jogo de tiro tático em equipes, realista e de elite, no qual planejamento e execução superiores triunfam.",
+        "foto": "r6"
+    },
+    {
+        "name": "DayZ",
+        "price": 64.99,
+        "description": "Quanto você aguenta em um mundo pós-apocalíptico? Uma terra arrasada por 'zumbis' infectados, onde você compete com outros sobreviventes por recursos limitados. Você vai ajudar estranhos em sua luta? Ou evitará traições como um lobo solitário? Esse é o DayZ. Essa é a sua história.",
+        "foto": "dayz"
+    },
+    {
+        "name": "Counter-Strike: Global Offensive",
+        "price": 25.99,
+        "description": "O Counter-Strike: Global Offensive (CS:GO) melhora a jogabilidade de ação baseada em equipes na qual foi pioneiro quando lançado há 19 anos.",
+        "foto": "csgo"
+    },
+    {
+        "name": "ARK: Survival Evolved",
+        "price": 37.99,
+        "description": "Como um homem ou mulher abandonado nu, congelando e morrendo de fome numa ilha misteriosa, você precisa caçar, colher, construir itens, cultivar e construir abrigos para sobreviver.",
+        "foto": "ark"
+    },
+    {
+        "name": "The Witcher® 3: Wild Hunt",
+        "price": 39.99,
+        "description": "Você é Geralt de Rívia, mercenário matador de monstros. Você está em um continente devastado pela guerra e infestado de monstros para você explorar à vontade. Sua tarefa é encontrar Ciri, a Criança da Profecia — uma arma viva que pode alterar a forma do mundo.",
+        "foto": "thewitcher"
+    },
+    {
+        "name": "Mortal Kombat 11",
+        "price": 229.99,
+        "description": "Mortal Kombat está de volta, melhor do que nunca, em uma evolução da icônica franquia.",
+        "foto": "mortalkombat11"
+    },
+    {
+        "name": "Battlefield™ 2042",
+        "price": 249.00,
+        "description": "Seja superior na Temporada 4: Última Hora. Battlefield™ 2042 é um jogo de tiro em primeira pessoa que marca o retorno à emblemática guerra total da franquia.",
+        "foto": "bf2042"
+    },
+    {
+        "name": "PUBG: BATTLEGROUNDS",
+        "price": 0.00,
+        "description": "Jogue PUBG: BATTLEGROUNDS de graça. Pouse em locais estratégicos, saqueie armas e suprimentos e sobreviva para se tornar a última equipe de pé nos mais variados campos de batalha.",
+        "foto": "pubg"
+    }
+]

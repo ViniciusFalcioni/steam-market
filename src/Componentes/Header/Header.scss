@@ -1,0 +1,30 @@
+@import 'bootstrap/scss/bootstrap';
+
+.custom-navbar {
+    background-color: #171a21;
+    color: #b8b6b4;
+}
+
+.custom-navbar .nav-link{
+    color: #b8b6b4;
+    font-weight: 500;
+
+    &:hover {
+        color: #fff;
+    }
+}
+
+.custom-navbar .btn-buscar {
+    background-color: #305d8a;
+    color: #fff;
+    border-color: #305d8a;
+
+    &:hover {
+        background-color: #b8b6b4;
+        border-color: #305d8a;
+    }
+}
+
+.logo {
+    width: 150px;
+}
