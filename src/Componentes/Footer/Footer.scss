@@ -1,0 +1,18 @@
+.custom-footer {
+    background-color: #171a21;
+    color: #b8b6b4;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+
+    .custom-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .logo {
+        width: 150px;
+    }
+}

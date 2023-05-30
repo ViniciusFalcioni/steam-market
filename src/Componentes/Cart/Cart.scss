@@ -1,0 +1,54 @@
+.custom-section-cart {
+    background-color: #1b2838;
+    min-height: 80vh;
+
+    .custom-h1 {
+        font-size: 1.75em;
+        color: #fff;
+    }
+
+    .custom-flex {
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    .custom-img {
+        width: 25em;
+    }
+
+    .custom-blockcart {
+        display: flex;
+        flex-direction: row;
+        justify-items: center;
+        align-items: center;
+        gap: 2em;
+        background-color: #2c415e;
+    }
+    
+    .custom-title {
+        font-size: 1.2em;
+        color: #fff;
+        font-weight: 500;
+    }
+    .custom-price {
+        font-size: 1.2em;
+        color: #fff;
+        font-weight: 500;
+        margin-right: 2em;
+    }
+    
+    .custom-block-payment {
+        display: flex;
+        flex-direction: row;
+        gap: 2em;
+        background-color: #2c415e;
+    }
+
+    .custom-payment-item {
+        text-align: center;
+        border-radius: 0.5em;
+        padding: 1em;
+    }
+
+}

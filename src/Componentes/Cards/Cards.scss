@@ -1,68 +1,69 @@
 @import 'bootstrap/scss/bootstrap';
 
-.custom-section {
+.custom-section-cards {
     background-color: #1b2838;
-}
+    min-height: 80vh;
 
-.custom-section .custom-card {
-    width: 100%;
-    height: 220px;
-    display: flex;
-    flex-direction: row;
-    background-color: #323e4c;
-    color: #b8b6b4;
-    margin: 1em;
-
-    @media screen and (max-width: 768px) {
-        display: flex;
-        flex-direction: column;
-        height: auto;
-    }
-}
-
-.custom-section .custom-img {
-    width: 20em;
-
-    @media screen and (max-width: 768px){
+    .custom-card {
         width: 100%;
+        height: 220px;
+        display: flex;
+        flex-direction: row;
+        background-color: #323e4c;
+        color: #b8b6b4;
+        margin: 1em;
+
+        @media screen and (max-width: 768px) {
+            display: flex;
+            flex-direction: column;
+            height: auto;
+        }
     }
-}
 
-.custom-section .custom-flex {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 2em;
+    .custom-img {
+        width: 20em;
 
-    @media screen and (max-width: 768px){
-        margin: 0;
-        margin-top: 1em;
-        margin-bottom: 1em;
+        @media screen and (max-width: 768px) {
+            width: 100%;
+        }
     }
-}
 
-.custom-section .btn-comprar {
-    background-color: #305d8a;
-    font-weight: 700;
-    color: #fff;
-    border-color: #305d8a;
+    .custom-flex {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 2em;
 
-    &:hover {
-        background-color: #b8b6b4;
+        @media screen and (max-width: 768px) {
+            margin: 0;
+            margin-top: 1em;
+            margin-bottom: 1em;
+        }
+    }
+
+    .btn-comprar {
+        background-color: #305d8a;
+        font-weight: 700;
+        color: #fff;
         border-color: #305d8a;
+
+        &:hover {
+            background-color: #b8b6b4;
+            border-color: #305d8a;
+        }
     }
-}
 
-.custom-section .price {
-    color: #fff;
-    font-weight: 500;
-    font-size: 1.2em;
-}
+    .price {
+        color: #fff;
+        font-weight: 500;
+        font-size: 1.2em;
+    }
 
-.custom-section .description {
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    /* Defina o número máximo de linhas desejado */
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    .description {
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        /* Defina o número máximo de linhas desejado */
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
 }

@@ -2,6 +2,8 @@ import React from 'react'
 import { Container, Card, Button, } from 'react-bootstrap';
 import GamesJson from '../../assets/games.json';
 import './Cards.scss'
+import { Link } from 'react-router-dom';
+
 
 export default function Cards() {
 
@@ -11,8 +13,8 @@ export default function Cards() {
     });
 
     return (
-        <div className='custom-section'>
-            <Container className='custom-container py-5'>
+        <div className='custom-section-cards'>
+            <Container className='py-5'>
                 <div className='custom-flex'>
                     {formatGames.map((jogo, index) => (
                         <Card className='custom-card' key={index}>
