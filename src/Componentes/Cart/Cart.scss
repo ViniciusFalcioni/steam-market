@@ -2,53 +2,91 @@
     background-color: #1b2838;
     min-height: 80vh;
 
-    .custom-h1 {
+    h1 {
         font-size: 1.75em;
         color: #fff;
+    }
+    
+    .custom-card {
+        width: 100%;
+        height: 220px;
+        display: flex;
+        flex-direction: row;
+        background-color: #323e4c;
+        color: #b8b6b4;
+        margin: 1em;
+
+        @media screen and (max-width: 768px) {
+            display: flex;
+            flex-direction: column;
+            height: auto;
+        }
+    }
+
+    .custom-img {
+        width: 20em;
+
+        @media screen and (max-width: 768px) {
+            width: 100%;
+        }
     }
 
     .custom-flex {
         display: flex;
-        flex-direction: column;
-        gap: 2em;
+        flex-wrap: wrap;
+        margin: 2em;
+
+        @media screen and (max-width: 768px) {
+            margin: 0;
+            margin-top: 1em;
+            margin-bottom: 1em;
+        }
     }
 
-    .custom-img {
-        width: 25em;
+    .btn-comprar {
+        background-color: #305d8a;
+        font-weight: 700;
+        color: #fff;
+        border-color: #305d8a;
+
+        &:hover {
+            background-color: #b8b6b4;
+            border-color: #305d8a;
+        }
     }
 
-    .custom-blockcart {
+    .price {
+        color: #fff;
+        font-weight: 500;
+        font-size: 1.2em;
+    }
+
+    .description {
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        /* Defina o número máximo de linhas desejado */
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .custom-nav-cart{
         display: flex;
         flex-direction: row;
-        justify-items: center;
         align-items: center;
-        gap: 2em;
-        background-color: #2c415e;
+        justify-content: space-between;
+        justify-items: center;
     }
-    
-    .custom-title {
+
+    .custom-total {
         font-size: 1.2em;
         color: #fff;
         font-weight: 500;
     }
-    .custom-price {
-        font-size: 1.2em;
-        color: #fff;
-        font-weight: 500;
-        margin-right: 2em;
-    }
-    
-    .custom-block-payment {
-        display: flex;
-        flex-direction: row;
-        gap: 2em;
-        background-color: #2c415e;
-    }
 
-    .custom-payment-item {
-        text-align: center;
-        border-radius: 0.5em;
-        padding: 1em;
+    .custom-empty {
+        font-size: 1.3em;
+        color: #d4d4d4;
+        margin-top: 1em;
     }
-
 }

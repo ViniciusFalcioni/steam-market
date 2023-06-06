@@ -12,7 +12,7 @@ export default function Header() {
                 <NavbarBrand><Link to="/"><img className='logo' src={Logo} alt="Logo da Steam" /></Link></NavbarBrand>
                 <Nav>
                     <Nav className="nav-link justify-content-end flex-grow-1">
-                        <Nav.Item><Link className='nav-link' to="/">Biblioteca</Link></Nav.Item>
+                        <Nav.Item><Link className='nav-link' to="/">Loja</Link></Nav.Item>
                         <Nav.Item><Link className='nav-link' to="/cart">Carrinho</Link></Nav.Item>
                     </Nav>
                 </Nav>
