@@ -1,28 +1,33 @@
-import React, { useContext } from 'react'
-import { Container, Card, Button, } from 'react-bootstrap';
-import GamesJson from '../../assets/games.json';
+import React, { useContext, useState } from 'react'
+import { Container, Card, Button, Form } from 'react-bootstrap';
+import gamesJson from '../../assets/games.json';
 import './Cards.scss'
-import { CarrinhoContext } from '../Cart/CarrinhoContext';
+import { CarrinhoContext } from '../Context/CarrinhoContext';
 import { Link } from 'react-router-dom';
+import { FilterContext } from '../Context/FilterContext';
+
 
 export default function Cards() {
+    const { adicionarAoCarrinho } = useContext(CarrinhoContext);
+    const { filterValue } = useContext(FilterContext);
 
-    const formatGames = GamesJson.map(item => {
+    const formatGames = gamesJson.map(item => {
         const formatPrice = item.price === 0 ? "Grátis" : `R$ ${item.price.toFixed(2)}`;
         return { ...item, price: formatPrice };
     });
-
-    const { adicionarAoCarrinho } = useContext(CarrinhoContext);
 
     const handleComprar = (jogo) => {
         adicionarAoCarrinho(jogo);
     };
 
+
+    const filteredGames = formatGames.filter(jogo => jogo.name.toLowerCase().includes(filterValue.toLowerCase()));
+
     return (
         <div className='custom-section-cards'>
             <Container className='py-5'>
                 <div className='custom-flex'>
-                    {formatGames.map((jogo, index) => (
+                    {filteredGames.map((jogo, index) => (
                         <Card className='custom-card' key={index}>
                             <Card.Img className='custom-img' variant="top" src={`src/assets/images/capas/${jogo.foto}.jpg`} />
                             <Card.Body>

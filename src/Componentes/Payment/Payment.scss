@@ -1,0 +1,58 @@
+@import 'bootstrap/scss/bootstrap';
+
+.custom-section-payment {
+    background-color: #1b2838;
+    min-height: 80vh;
+
+    h1 {
+        font-size: 1.75em;
+        color: #fff;
+    }
+
+    .tab-custom {
+        margin-bottom: 2em;
+        margin-top: 2em;
+    }
+
+    .tab-custom .MuiSvgIcon-root {
+        color: #fff;
+    }
+
+    .tab-link {
+        text-decoration: none;
+        text-align: center;
+        color: #fff;
+    }
+
+    .nav-tabs .nav-link.active {
+        background-color: #171a21;
+        color: white;
+    }
+
+    .form-custom {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+
+    }
+
+    .dual-input {
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
+    }
+
+    .custom-header-payment {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        justify-items: center;
+    }
+
+    .custom-total {
+        font-size: 1.2em;
+        color: #fff;
+        font-weight: 500;
+    }
+}

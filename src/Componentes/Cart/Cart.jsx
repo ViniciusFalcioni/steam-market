@@ -1,7 +1,8 @@
 import React, { useContext } from 'react';
 import './Cart.scss'
 import { Container, Button, Card } from 'react-bootstrap';
-import { CarrinhoContext } from './CarrinhoContext';
+import { CarrinhoContext } from '../Context/CarrinhoContext';
+import { Link } from 'react-router-dom';
 
 export default function Cart() {
     const { carrinho, removerDoCarrinho } = useContext(CarrinhoContext);
@@ -14,14 +15,19 @@ export default function Cart() {
             return accumulator + price;
         }, 0);
     }
+
     return (
         <div className='custom-section-cart'>
             <Container className='py-5'>
                 <div>
-                    <div className='custom-nav-cart'>
+                    <div className='custom-header-cart'>
                         <h1 className='custom-h1'>Seu carrinho de compras</h1>
                         <div className='custom-total'>Total: R$ {totalPrice.toFixed(2)}</div>
-                        <Button variant="success">Finalizar Compra</Button>
+                        {carrinho.length === 0 ? (
+                            <Button disabled variant="success">Finalizar Compra</Button>
+                        ) : (
+                            <Link to='/payment'><Button variant="success">Finalizar Compra</Button></Link>
+                        )}
                     </div>
                     <div>
                         {carrinho.length === 0 ? (

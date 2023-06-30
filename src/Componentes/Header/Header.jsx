@@ -1,11 +1,17 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { Container, Navbar, NavbarBrand, Form, Button, Nav, } from 'react-bootstrap';
 import './Header.scss';
 import Logo from '../../assets/images/Steam-logo.png';
-import SearchIcon from '@mui/icons-material/Search';
+import { FilterContext } from '../Context/FilterContext';
 
 export default function Header() {
+    const { filterValue, setFilterValue } = useContext(FilterContext)
+
+    const handleChange = (event) => {
+        setFilterValue(event.target.value);
+      };
+
     return (
         <Navbar className='custom-navbar py-4' expand="lg" variant="light">
             <Container>
@@ -22,8 +28,9 @@ export default function Header() {
                         placeholder="Search"
                         className="me-2"
                         aria-label="Search"
+                        value={filterValue}
+                        onChange={handleChange}
                     />
-                    <Button variant="outline-success" className='btn-buscar'><SearchIcon /></Button>
                 </Form>
             </Container>
         </Navbar>
